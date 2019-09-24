@@ -1,0 +1,136 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+div.content{
+	text-align:center;
+	margin:auto;
+	max-width:900px;
+}
+h1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    line-height:150%;
+    text-align: center;
+    font-size:20pt;
+    font-family:Arial, Serif;
+}
+h2{
+    margin-left: -4px;
+    margin-right: auto;
+    width: 95%;
+    line-height:150%;
+    text-align: justify;
+    font-size:20pt;
+    font-family:Arial, Serif;
+}
+div.authors{
+	font-weight:bold;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    font-family: Arial, Serif;
+    font-size:12pt;
+}
+div.hints1{
+	text-align:center;
+	font-size:8pt;
+}
+div.icst{
+	text-align:center;
+	font-size:11pt;
+}
+div.acc{
+	font-style:italic
+	text-align:center;
+	font-size:12pt;
+}
+div.plaintext{
+	text-align: justify;
+}
+td{
+	text-align:center;
+	font-size:15pt;
+}
+img{
+	width:100%;
+	margin:auto;
+}
+</style>
+</head>
+<body>
+	<div id="main">
+		<div class="content">
+			<h1>SRINet: Learning Strictly Rotation-Invariant Representations for Point Cloud Classification and Segmentation</h1><br/>
+			<div class="authors">
+				<a href="tasx0823.github.io" style="text-decoration: none">Xiao Sun</a>
+				<a href="http://www.icst.pku.edu.cn/zlian/" style="text-decoration: none">Zhouhui Lian</a>
+				<a href="http://www.icst.pku.edu.cn/xztd/xztd_01/1222630.htm" style="text-decoration: none">Jianguo Xiao</a>
+			</div>
+			
+			<br>
+			<div class="icst"><a href="http://www.icst.pku.edu.cn/english/home/index.htm" style="text-decoration: none">Institute of Computer Science and Technology, Peking University, Beijing, P.R. China<br/>Center For Chinese Font Design and Research, Peking University, Beijing, P.R. China</a></div>
+			<br>
+			<div class="acc"><i>Accepted by ACM MM, 2019.</i></div>
+			<br>
+			<img src="./material/pipeline.jpg"/>
+			<h2>Abstract</h2>
+			<div class="plaintext">
+			Point cloud analysis has drawn broader attentions due to its increasing demands in various fields. Despite the impressive performance has been achieved on several databases, researchers neglect the fact that the orientation of those point cloud data is aligned. Varying the orientation of point cloud may lead to the degradation of performance, restricting the capacity of generalizing to real applications where the prior of orientation is often unknown. In this paper, we propose the point projection feature, which is invariant to the rotation of the input point cloud. A novel architecture is designed to mine features of different levels. We adopt a PointNet-based backbone to extract global feature for point cloud, and the graph aggregation operation to perceive local shape structure.  Besides, we introduce an efficient key point descriptor to assign each point with different response and help recognize the overall geometry. Mathematical analyses and experimental results demonstrate that the proposed method can extract strictly rotation-invariant representations for point cloud recognition and segmentation without data augmentation, and outperforms other state-of-the-art methods.
+			</div>
+			<h2>Download</h2>
+			<div class="plaintext">
+			<li>Paper: <a href="./material/SRIN.pdf">PDF</a></li>
+			<!--- <li>Datasets: <a href="./datasets.zip">zip</a></li>-->
+			<li>Code & Dataset: <a href="https://github.com/tasx0823/SRINet">Github</a></li>
+			</div>
+			<!--
+			<h2>Experimental Results</h2>
+			<table>
+			<tr> 
+			<td>
+			<br>
+			Generated Skeletons
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<img src="./images/figure7.png"/>
+			</td>
+			</tr>
+			<tr> 
+			<td>
+			<br>
+			Character Synthesis
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<img src="./images/figure8.png"/>
+			</td>
+			</tr>
+			</table>
+			<table>
+			<tr> 
+			<td style="width:50%">
+			<br>
+			Details at the Intersections
+			</td>
+			<td style="width:50%">
+			<br>
+			Comparsion with [ZYZ* 18]
+			</td>
+			</tr>
+			<tr>
+			<td style="width:50%">
+			<img src="./images/figure9.png"/>
+			</td>
+			<td style="width:50%">
+			<img src="./images/figure11.png"/>
+			</td>
+			</table>
+			-->
+		</div>
+	</div>
+</body>
